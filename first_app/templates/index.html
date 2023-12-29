@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>first app</h1>
+    <h1>{{author}}</h1>
+
+    {% comment %} add {% endcomment %}
+    
+    <h3>{{value | add:"2"}}</h3>
+    {% comment %} addslashes {% endcomment %}
+    <h4>{{val | addslashes}}</h4>
+    {% comment %} capfirst {% endcomment %}
+    <h4>{{val | capfirst}}</h4>
+    {% comment %} center {% endcomment %}
+    <h4>{{val | center:"15"}}</h4>
+    {% comment %} cut {% endcomment %}
+    <h4>{{val2 | cut:" "}}</h4>
+    {% comment %} data {% endcomment %}
+    <h4>{{bday | date:"D d M Y"}}</h4>
+    {% comment %} default {% endcomment %}
+    <h4>{{val3 | default:"nothing"}}</h4>
+    {% comment %} dictsort {% endcomment %}
+    <h4>{{namelist | dictsort:"name"}}</h4>
+    {% comment %}divisible by  {% endcomment %}
+    <h4>{{value | divisibleby:"3"}}</h4>
+    {% comment %} filesizeformat {% endcomment %}
+    <h4>{{val4 | filesizeformat}}</h4>
+    {% comment %} first {% endcomment %}
+    <h4>{{namelist | first}}</h4>
+    {% comment %} join {% endcomment %}
+    <h4>{{vallist | join:" // "}}</h4>
+    {% comment %} last {% endcomment %}
+    <h4>{{vallist | last}}</h4>
+    {% comment %} length {% endcomment %}
+    <h4>{{vallist | length}}</h4>
+    {% comment %} linenumbers {% endcomment %}
+    <h4>{{namelist | linenumbers}}</h4>
+    {% comment %} lower {% endcomment %}
+    <h4>{{val2 | lower}}</h4>
+    {% comment %} make_list {% endcomment %}
+    <h4>{{value | make_list}}</h4>
+    {% comment %} random {% endcomment %}
+    <h4>{{vallist | random}}</h4>
+    {% comment %} slice {% endcomment %}
+    <h4>{{vallist | slice:":1"}}</h4>
+    {% comment %} slugify {% endcomment %}
+    <h4>{{val2 | slugify}}</h4>
+    {% comment %} time {% endcomment %}
+    <h4>{{bday | time:"H:i"}}</h4>
+    {% comment %} title {% endcomment %}
+    <h4>{{vallist | title}}</h4>
+    {% comment %} upper {% endcomment %}
+    <h4>{{val | upper}}</h4>
+    {% comment %} wordcount {% endcomment %}
+    <h4>{{vallist | wordcount}}</h4>
+    {% comment %} short date format {% endcomment %}
+    <h4>{{ctime | date:"SHORT_DATE_FORMAT"}}</h4>
+    
+
+</body>
+</html>
